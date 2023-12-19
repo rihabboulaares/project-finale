@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>B</span>oulaares<span>R</span>ihab</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+					<li><a href="page1.html">Curriculum Vitae</a></li>
+					<li><a href="page2.html">Projects</a></li>
+					<li><a href="page3.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Boulaares Rihab <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+  
+
+ 
+  
+
+  <!-- Contact Section -->
+  
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+216 52344211</h2>
+            <h2>+216 55028346</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>rihab.boulaares@esprit.tn</h2>
+            <h2>ryhab.boulaares@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="img/contact.jpeg" width="100"/></div>
+          <div class="contact-info">
+            <h1>contact</h1>
+            
+  
+          <form  onsubmit="return validateForm()" >
+  
+            <div class="form-wrapper">
+  
+              <label for="email" class="form-label">Email</label>
+  
+              <div class="input-wrapper">
+  
+                <input type="email" name="email" id="email" required placeholder="mail@mail.com"
+                  class="input-field">
+  
+                <ion-icon name="mail"></ion-icon>
+  
+              </div>
+  
+            </div>
+  
+  
+            <div class="form-wrapper">
+  
+              <label for="message" class="form-label">Message</label>
+  
+              <div class="input-wrapper">
+  
+                <textarea name="message" id="message" required placeholder="Write message..."
+                  class="input-field"></textarea>
+  
+                <ion-icon name="chatbubbles"></ion-icon>
+  
+              </div>
+  
+            </div>
+  
+            <input type="submit" value="confirm">
+    </section>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+         
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>B</span>oulaares <span>R</span>ihab</h1>
+      </div>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2023. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+  <script>
+    function validateForm() {
+      var emailInput = document.getElementById("email").value; // Utiliser "email" au lieu de "emailInput"
+      var emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+      if (!emailFormat.test(emailInput)) {
+        alert("Veuillez entrer une adresse e-mail valide dans le format 'quelquechose@gmail.com'");
+        return false;
+      }
+  
+      // Afficher un message de succès (vous pouvez personnaliser ce message selon vos besoins)
+      alert("Le formulaire a été soumis avec succès!");
+  
+      return true;
+    }
+  </script>
+</body>
+
+</html>
